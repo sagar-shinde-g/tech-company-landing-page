@@ -44,11 +44,13 @@ if(isset($_POST['out'])){
     </div>
   </nav>
 
+<div class="container-md text-center mt-5 ">
+  <h1><b>TOTAL ENQUIRIES</b></h1>
+</div>
 
 
 
-
-  <div class="py-5">
+  <div class="py-2">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -58,7 +60,7 @@ if(isset($_POST['out'])){
                 <tr>
                   <th scope="col">ID</th>
                   <th scope="col">NAME</th>
-                  <th scope="col">EMAIL</th>
+                  <th scope="col">EMAIL</th>    <th scope="col">PHONE</th>
                   <th scope="col">MESSAGE</th>
                 </tr>
               </thead>
@@ -78,7 +80,8 @@ if(isset($_POST['out'])){
                         <th scope="row">'.$row['id'].'</th>
                         <td>'.$row['name'].'</td>
                         <td>'.$row['email'].'</td>
-                        <td>'.$row['message'].'</td>
+                        <td>'.$row['phone'].'</td>
+                        <td>'.$row['message'].'</td> 
                       </tr>';
 
                       }
